@@ -32,7 +32,7 @@ namespace P1C_
                 var ans = Console.ReadLine();
                 numberofdrinks = Convert.ToInt32(ans);
             }
-            Console.WriteLine($"You have selected {numberofdrinks} number of items.");
+            Console.WriteLine($"You have selected {numberofdrinks} items.");
 
             if(numberofdrinks>6)
             {
