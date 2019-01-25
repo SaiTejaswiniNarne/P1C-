@@ -25,7 +25,7 @@ namespace P1C_
                 Console.WriteLine($"Enter your name: ");
                 name = Console.ReadLine();
             }
-            
+            while(true){
             while(numberofdrinks == 0)
             {
                 Console.WriteLine($"How many drinks do you need?");
@@ -76,13 +76,15 @@ namespace P1C_
             Console.WriteLine($"Your order is {drink} and the Cost of it is {amount}");
           }
         
-        Console.WriteLine("Press q to exit or press any other key to continue");
+        Console.WriteLine("Press q key to quit and any other key to continue...");
         var s = Console.ReadLine();
-        while(s=="q")
+        if(s=="q")
         {
-            EXIT = true;
+            EXIT = false;
             break;
-        }    
+        }  
+        numberofdrinks=0;
+            }  
         }
     }
 }
